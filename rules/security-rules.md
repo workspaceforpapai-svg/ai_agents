@@ -1,0 +1,13 @@
+# Security Rules
+- Threat-model trust boundaries, assets, actors, and abuse cases for sensitive features.
+- Enforce authorization on the server for every resource and operation.
+- Never trust client-provided role, price, tenant, owner, or status values.
+- Prevent IDOR by checking resource ownership/tenant scope on every read and write.
+- Use secure password hashing through maintained libraries; never implement custom cryptography.
+- Store secrets outside source control; rotate exposed credentials.
+- Protect against injection, XSS, CSRF, SSRF, path traversal, open redirects, and unsafe deserialization as applicable.
+- Apply secure headers, TLS, cookie settings, and CORS allowlists appropriate to deployment.
+- Minimize personal data collection, retention, logging, and exposure.
+- Treat payment callbacks/webhooks as untrusted: verify signatures and idempotency.
+- Document findings with severity, evidence, impact, and remediation.
+- Do not perform exploit testing against systems without authorization.

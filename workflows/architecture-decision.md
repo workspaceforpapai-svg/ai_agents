@@ -1,0 +1,3 @@
+# Architecture Decision Workflow
+
+State the decision and forces. Record observed constraints and assumptions. Compare at least two plausible options for material decisions across security, complexity, maintainability, performance, cost, migration effort, and reversibility. Recommend the least complex option satisfying constraints. Document consequences and revisit triggers. Obtain approval for major changes.

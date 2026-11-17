@@ -1,0 +1,3 @@
+# Definition of Done
+
+Acceptance criteria are met or explicitly marked unmet; changes are scoped; existing behavior is preserved or approved; relevant tests are executed and evidenced; security and authorization reviewed; migrations/config/docs handled; known issues and unverified areas disclosed; approvals recorded; final diff contains no accidental secrets or unrelated changes. A successful build alone is not proof of feature correctness.

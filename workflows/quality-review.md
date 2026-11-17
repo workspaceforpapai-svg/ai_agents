@@ -1,0 +1,3 @@
+# Independent Quality Review Workflow
+
+Inspect the actual diff. Trace changed interfaces to consumers. Review correctness, edge cases, errors, security, data integrity, concurrency, performance, accessibility, maintainability, and tests. Report severity-ranked findings with location, evidence, impact, and remediation. Do not edit during independent review unless separately assigned. No findings is not proof of no defects.

@@ -1,0 +1,11 @@
+# API Standards
+- Follow existing API versioning, naming, authentication, and response conventions.
+- Validate all inputs and reject unknown or invalid fields where appropriate.
+- Enforce authorization and tenant scoping server-side.
+- Use consistent success and error schemas.
+- Use appropriate HTTP status codes.
+- Paginate list endpoints with bounded page size.
+- Define idempotency for payment, booking, and retryable mutation endpoints.
+- Add timeouts and safe handling for external services.
+- Document request/response examples and error cases.
+- Add contract and integration tests for changed endpoints.

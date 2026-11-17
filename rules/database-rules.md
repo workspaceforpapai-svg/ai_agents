@@ -1,0 +1,11 @@
+# Database Rules
+- Inspect the current schema, migrations, indexes, constraints, and data access patterns first.
+- Confirm tenant boundaries and ownership constraints in multi-tenant systems.
+- Use migrations; do not manually mutate a shared/production schema.
+- Prefer additive, backward-compatible migration sequences.
+- Plan backfills, locks, deployment ordering, rollback, and backups.
+- Use foreign keys and unique constraints where appropriate.
+- Add indexes based on query patterns and validate query plans where possible.
+- Use transactions for consistency and safe retry behavior.
+- Avoid SELECT * and unbounded queries in hot paths.
+- Never use production data in local tests unless properly anonymized and authorized.

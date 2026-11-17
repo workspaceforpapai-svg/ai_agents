@@ -1,0 +1,26 @@
+framework:
+  name: AI Development Framework
+  version: 2.0.0
+  workflow_mode: controlled
+  platforms: [copilot, claude, codex]
+  agent_count: 30
+  default_branch: main
+  execution:
+    inspect_before_edit: true
+    preserve_user_changes: true
+    parallel_only_for_independent_tasks: true
+    require_evidence_for_done: true
+    human_approval_required_for:
+      - destructive_or_irreversible_operations
+      - production_data_changes
+      - production_deployment
+      - production_migrations
+      - authentication_authorization_or_tenant_boundary_changes
+      - secrets_or_permissions_changes
+      - breaking_public_api_changes
+      - broad_dependency_or_runtime_upgrades
+      - financial_or_external_communication_actions
+  completion:
+    require_acceptance_criteria_status: true
+    require_test_evidence: true
+    disclose_unverified_checks: true
